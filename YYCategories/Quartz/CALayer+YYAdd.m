@@ -59,103 +59,103 @@ YYSYNTH_DUMMY_CLASS(CALayer_YYAdd)
     }
 }
 
-- (CGFloat)left {
+- (CGFloat)yy_left {
     return self.frame.origin.x;
 }
 
-- (void)setLeft:(CGFloat)x {
+- (void)setYy_left:(CGFloat)x {
     CGRect frame = self.frame;
     frame.origin.x = x;
     self.frame = frame;
 }
 
-- (CGFloat)top {
+- (CGFloat)yy_top {
     return self.frame.origin.y;
 }
 
-- (void)setTop:(CGFloat)y {
+- (void)setYy_top:(CGFloat)y {
     CGRect frame = self.frame;
     frame.origin.y = y;
     self.frame = frame;
 }
 
-- (CGFloat)right {
+- (CGFloat)yy_right {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (void)setRight:(CGFloat)right {
+- (void)setYy_right:(CGFloat)right {
     CGRect frame = self.frame;
     frame.origin.x = right - frame.size.width;
     self.frame = frame;
 }
 
-- (CGFloat)bottom {
+- (CGFloat)yy_bottom {
     return self.frame.origin.y + self.frame.size.height;
 }
 
-- (void)setBottom:(CGFloat)bottom {
+- (void)setYy_bottom:(CGFloat)bottom {
     CGRect frame = self.frame;
     frame.origin.y = bottom - frame.size.height;
     self.frame = frame;
 }
 
-- (CGFloat)width {
+- (CGFloat)yy_width {
     return self.frame.size.width;
 }
 
-- (void)setWidth:(CGFloat)width {
+- (void)setYy_width:(CGFloat)width {
     CGRect frame = self.frame;
     frame.size.width = width;
     self.frame = frame;
 }
 
-- (CGFloat)height {
+- (CGFloat)yy_height {
     return self.frame.size.height;
 }
 
-- (void)setHeight:(CGFloat)height {
+- (void)setYy_height:(CGFloat)height {
     CGRect frame = self.frame;
     frame.size.height = height;
     self.frame = frame;
 }
 
-- (CGPoint)center {
+- (CGPoint)yy_center {
     return CGPointMake(self.frame.origin.x + self.frame.size.width * 0.5,
                        self.frame.origin.y + self.frame.size.height * 0.5);
 }
 
-- (void)setCenter:(CGPoint)center {
+- (void)setYy_center:(CGPoint)center {
     CGRect frame = self.frame;
     frame.origin.x = center.x - frame.size.width * 0.5;
     frame.origin.y = center.y - frame.size.height * 0.5;
     self.frame = frame;
 }
 
-- (CGFloat)centerX {
+- (CGFloat)yy_centerX {
     return self.frame.origin.x + self.frame.size.width * 0.5;
 }
 
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setYy_centerX:(CGFloat)centerX {
     CGRect frame = self.frame;
     frame.origin.x = centerX - frame.size.width * 0.5;
     self.frame = frame;
 }
 
-- (CGFloat)centerY {
+- (CGFloat)yy_centerY {
     return self.frame.origin.y + self.frame.size.height * 0.5;
 }
 
-- (void)setCenterY:(CGFloat)centerY {
+- (void)setYy_centerY:(CGFloat)centerY {
     CGRect frame = self.frame;
     frame.origin.y = centerY - frame.size.height * 0.5;
     self.frame = frame;
 }
 
-- (CGPoint)origin {
+- (CGPoint)yy_origin {
     return self.frame.origin;
 }
 
-- (void)setOrigin:(CGPoint)origin {
+- (void)setYy_origin:(CGPoint)origin {
     CGRect frame = self.frame;
     frame.origin = origin;
     self.frame = frame;
